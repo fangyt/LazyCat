@@ -1,0 +1,31 @@
+//
+//  LazyCat.pch
+//  LazyCat
+//
+//  Created by 方永腾 on 2016/11/21.
+//  Copyright © 2016年 方永腾. All rights reserved.
+//
+
+#ifndef LazyCat_pch
+#define LazyCat_pch
+
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+#define mark------分类-------------------
+#import "NSString+TextSize.h"
+#import "UIView+XMGExtension.h"
+#import "UIBarButtonItem+LCYTBarButtonItem.h"
+
+#pragma mark ------------一些公共属性---------------
+#define HomeMargin 15.0
+#define YTColor(r, g, b) [UIColor colorWithRed:(r) / 225.0 green:(g) / 225.0 blue:(b) / 225.0 alpha:1.0] // 获得自定义RGB
+#define WCUserDefaults [NSUserDefaults standardUserDefaults]
+
+#ifdef DEBUG // 自定义Log
+#define LCLog(...) NSLog(__VA_ARGS__)
+#else
+#define LCLog(...)
+#endif
+
+#endif /* LazyCat_pch */
